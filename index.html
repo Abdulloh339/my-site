@@ -12,7 +12,27 @@ content="Professional web saytlar | @Mamurov1112">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-<style>/* Animations */
+<style>/* Contact Box Design */
+.contact-box {
+  background: linear-gradient(135deg, #020617, #020617cc);
+  border: 2px solid #38bdf8;
+  border-radius: 20px;
+  padding: 30px 20px;
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(56,189,248,0.4);
+  animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 15px rgba(56,189,248,0.3);
+  }
+  to {
+    box-shadow: 0 0 30px rgba(56,189,248,0.8);
+  }
+}/* Animations */
 @keyframes fadeUp {
   from {
     opacity: 0;
