@@ -4,319 +4,316 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Abdulloh | Web Developer</title>
+<title>Abdulloh | Professional Web Developer</title>
+<meta name="description" content="Men professional web saytlar yarataman – biznes, landing, portfolio va boshqalar. Bog‘lanish: @Mamurov1112">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-<style>/* Modern Contact Section */
-.contact-modern {
-  background: linear-gradient(135deg, #020617, #020617cc);
-  border-radius: 25px;
-  padding: 40px 25px;
-  max-width: 600px;
-  margin: 50px auto;
-  box-shadow: 0 20px 40px rgba(56,189,248,0.25);
-  text-align: center;
-}
+<style>
 
-.contact-modern h2 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-.contact-modern p {
-  color: #cbd5e1;
-  margin-bottom: 25px;
-  font-size: 15px;
-}
-
-.contact-modern button {
-  width: 100%;
-  margin-top: 10px;
-  font-size: 16px;
-}
+/* 📌 Umumiy */
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins,sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-body{
-background:#0f172a;
-color:white;
+body {
+  background: #0f172a;
+  color: white;
 }
 
-/* Navbar */
-.navbar{
-background:#020617;
-padding:15px 25px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-position:sticky;
-top:0;
-z-index:1000;
+/* 🟦 Header */
+header {
+  background: linear-gradient(135deg, #2563eb, #0ea5e9);
+  text-align: center;
+  padding: 60px 20px;
 }
 
-.logo{
-color:#38bdf8;
-font-size:22px;
-font-weight:bold;
+header h1 {
+  font-size: 36px;
+  font-weight: 600;
 }
 
-.nav-links{
-display:flex;
-gap:15px;
-list-style:none;
+header p {
+  margin-top: 8px;
+  font-size: 18px;
 }
 
-.nav-links a{
-color:white;
-text-decoration:none;
+/* 🟧 Button */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #020617;
+  color: #38bdf8;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
-.nav-links a:hover{
-color:#38bdf8;
+/* 📌 Sectionlar */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-/* Header */
-header{
-background:linear-gradient(135deg,#2563eb,#0ea5e9);
-text-align:center;
-padding:90px 20px;
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: #38bdf8;
 }
 
-header h1{
-font-size:36px;
+/* 🟪 Xizmatlar */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap:20px;
 }
 
-header p{
-margin:10px 0;
-font-size:18px;
+.card {
+  background: #020617;
+  padding: 20px;
+  border-radius: 12px;
+  text-align:center;
+  transition: .3s;
 }
 
-.btn{
-display:inline-block;
-margin-top:25px;
-padding:12px 30px;
-background:#020617;
-color:#38bdf8;
-border-radius:30px;
-text-decoration:none;
-font-weight:600;
+.card:hover {
+  transform: translateY(-5px);
+  background: #020617cc;
 }
 
-/* Section */
-section{
-max-width:1100px;
-margin:auto;
-padding:60px 20px;
+/* 🎨 Portfolio */
+.portfolio img {
+  width: 100%;
+  border-radius: 12px;
 }
 
-h2{
-text-align:center;
-color:#38bdf8;
-margin-bottom:35px;
+/* 🟩 Footer */
+footer {
+  background: #020617;
+  text-align:center;
+  padding: 20px;
+  margin-top: 50px;
+  opacity: .8;
 }
 
-/* Services */
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:#020617;
-padding:25px;
-border-radius:15px;
-text-align:center;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-6px);
-}
-
-/* Contact */
-.contact{
-background:#020617;
-border-radius:20px;
-padding:40px 25px;
-max-width:500px;
-margin:auto;
-}
-
-input,textarea{
-width:100%;
-padding:12px;
-margin:10px 0;
-border-radius:8px;
-border:none;
-}
-
-button{
-padding:12px 25px;
-background:#38bdf8;
-border:none;
-border-radius:25px;
-font-weight:600;
-cursor:pointer;
-}
-
-/* Footer */
-footer{
-background:#020617;
-text-align:center;
-padding:25px;
-margin-top:50px;
-opacity:.8;
-}
 </style>
 </head>
 
 <body>
 
-<!-- Navbar -->
-<nav class="navbar">
-<div class="logo">Abdulloh</div>
-
-<ul class="nav-links">
-<li><a href="#home">Bosh sahifa</a></li>
-<li><a href="#services">Xizmatlar</a></li>
-<li><a href="#contact">Aloqa</a></li>
-</ul>
-</nav>
-
-<!-- Header -->
-<header id="home">
-<h1>Salom, men Abdulloh 👋</h1>
-<p>Professional Web Developer</p>
-
-<a href="#contact" class="btn">Buyurtma berish</a>
+<!-- 📌 Header (Bosh qism) -->
+<header>
+  <h1>Salom, men Abdulloh 👋</h1>
+  <p>Professional Web Developer</p>
+  <a class="btn" href="https://t.me/Mamurov1112" target="_blank">Bog‘lanish</a>
 </header>
 
-<!-- Services -->
-<section id="services">
+<!-- 📌 Xizmatlar -->
+<section>
+  <h2>Xizmatlarim</h2>
+  <div class="services">
 
-<h2>Xizmatlarim</h2>
+    <div class="card">
+      <h3>🌐 Web sayt</h3>
+      <p>Korxonalar va shaxslar uchun saytlar</p>
+    </div>
 
-<div class="services">
+    <div class="card">
+      <h3>📱 Responsive</h3>
+      <p>Telefon va kompyuter uchun mos</p>
+    </div>
 
-<div class="card">
-<h3>🌐 Web Sayt</h3>
-<p>Biznes va shaxsiy saytlar</p>
-</div>
+    <div class="card">
+      <h3>⚡ Tez va zamonaviy</h3>
+      <p>Yuqori tezlik va zamonaviy dizayn</p>
+    </div>
 
-<div class="card">
-<h3>📱 Responsive</h3>
-<p>Telefon va kompyuterga mos</p>
-</div>
-
-<div class="card">
-<h3>⚡ Tezkor</h3>
-<p>Yuqori tezlik</p>
-</div>
-
-</div>
+  </div>
 </section>
 
-<!-- Contact -->
-<section id="contact">
-
-<h2>Bog‘lanish</h2>
-
-<div class="contact">
-
-
-</form>
-
-<p style="text-align:center;margin-top:15px;">
-Telegram:
-<a href="https://t.me/Mamurov1112" style="color:#38bdf8;">
-@Mamurov1112
-</a>
-</p>
-
-</div>
-
+<!-- 📌 Portfolio -->
+<section class="portfolio">
+  <h2>Portfolio</h2>
+  <img src="https://via.placeholder.com/900x400" alt="Portfolio rasm">
 </section>
-<!-- Portfolio -->
-<section id="portfolio">
 
-<h2>Portfolio</h2>
-
-<div class="services">
-
-<div class="card">
-<img src="project1.jpg" width="100%" style="border-radius:10px;">
-<h3>Web Sayt</h3>
-</div>
-
-<div class="card">
-<img src="project2.jpg" width="100%" style="border-radius:10px;">
-<h3>Landing Page</h3>
-</div>
-
-<div class="card">
-<img src="project3.jpg" width="100%" style="border-radius:10px;">
-<h3>Biznes Sayt</h3>
-</div>
-
-</div>
-<section class="contact-modern" id="contact">
-  <h2>Men bilan bog‘laning</h2>
-  <p>Loyihangiz haqida yozing, tez orada javob beraman 🚀</p>
-
-  <form>
-    <input type="text" placeholder="Ismingiz" required>
-    <input type="email" placeholder="Email" required>
-    <textarea placeholder="Xabaringiz" rows="4"></textarea>
-    <button type="submit">Yuborish</button>
-  </form>
+<!-- 📌 Aloqa -->
+<section>
+  <h2>Aloqa</h2>
+  <p style="text-align:center;">Buyurtma uchun yozing:</p>
+  <a class="btn" href="https://t.me/Mamurov1112" target="_blank">Telegramda yozish</a>
 </section>
-</section>
+
+<!-- 📌 Footer -->
 <footer>
-© 2026 Abdulloh | Web Developer
+  © 2026 Abdulloh | Web Developer
 </footer>
-<section id="contact">
 
-  <h2>📩 Bog‘lanish</h2>
+</body>
+</html> <!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <p style="text-align:center;">
-    Loyiha yoki sayt kerakmi? Menga yozing 👇
-  </p>
+<title>Abdulloh | Professional Web Developer</title>
+<meta name="description" content="Men professional web saytlar yarataman – biznes, landing, portfolio va boshqalar. Bog‘lanish: @Mamurov1112">
 
-  <form action="https://formsubmit.co/abdullohmamurov1114@gmail.com" method="POST">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <input type="hidden" name="_captcha" value="false">
+<style>
 
-    <input type="text" name="name" placeholder="Ismingiz" required>
+/* 📌 Umumiy */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
-    <input type="email" name="email" placeholder="Emailingiz" required>
+body {
+  background: #0f172a;
+  color: white;
+}
 
-    <textarea name="message" placeholder="Xabaringiz" required></textarea>
+/* 🟦 Header */
+header {
+  background: linear-gradient(135deg, #2563eb, #0ea5e9);
+  text-align: center;
+  padding: 60px 20px;
+}
 
-    <button type="submit">Yuborish 🚀</button>
+header h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
 
-  </form>
+header p {
+  margin-top: 8px;
+  font-size: 18px;
+}
 
-  <p style="text-align:center;margin-top:15px;">
-    Telegram:
-    <a href="https://t.me/Mamurov1112">@Mamurov1112</a>
-  </p>
+/* 🟧 Button */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #020617;
+  color: #38bdf8;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+}
 
-<section class="contact-modern" id="contact">
-  <h2>Men bilan bog‘laning</h2>
-  <p>Loyihangiz haqida yozing, tez orada javob beraman 🚀</p>
+/* 📌 Sectionlar */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
 
-  <form>
-    <input type="text" placeholder="Ismingiz" required>
-    <input type="email" placeholder="Email" required>
-    <textarea placeholder="Xabaringiz" rows="4"></textarea>
-    <button type="submit">Yuborish</button>
-  </form>
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: #38bdf8;
+}
+
+/* 🟪 Xizmatlar */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap:20px;
+}
+
+.card {
+  background: #020617;
+  padding: 20px;
+  border-radius: 12px;
+  text-align:center;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #020617cc;
+}
+
+/* 🎨 Portfolio */
+.portfolio img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* 🟩 Footer */
+footer {
+  background: #020617;
+  text-align:center;
+  padding: 20px;
+  margin-top: 50px;
+  opacity: .8;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- 📌 Header (Bosh qism) -->
+<header>
+  <h1>Salom, men Abdulloh 👋</h1>
+  <p>Professional Web Developer</p>
+  <a class="btn" href="https://t.me/Mamurov1112" target="_blank">Bog‘lanish</a>
+</header>
+
+<!-- 📌 Xizmatlar -->
+<section>
+  <h2>Xizmatlarim</h2>
+  <div class="services">
+
+    <div class="card">
+      <h3>🌐 Web sayt</h3>
+      <p>Korxonalar va shaxslar uchun saytlar</p>
+    </div>
+
+    <div class="card">
+      <h3>📱 Responsive</h3>
+      <p>Telefon va kompyuter uchun mos</p>
+    </div>
+
+    <div class="card">
+      <h3>⚡ Tez va zamonaviy</h3>
+      <p>Yuqori tezlik va zamonaviy dizayn</p>
+    </div>
+
+  </div>
 </section>
+
+<!-- 📌 Portfolio -->
+<section class="portfolio">
+  <h2>Portfolio</h2>
+  <img src="https://via.placeholder.com/900x400" alt="Portfolio rasm">
+</section>
+
+<!-- 📌 Aloqa -->
+<section>
+  <h2>Aloqa</h2>
+  <p style="text-align:center;">Buyurtma uchun yozing:</p>
+  <a class="btn" href="https://t.me/Mamurov1112" target="_blank">Telegramda yozish</a>
+</section>
+
+<!-- 📌 Footer -->
+<footer>
+  © 2026 Abdulloh | Web Developer
+</footer>
+
 </body>
 </html>
