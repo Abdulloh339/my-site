@@ -9,7 +9,40 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-<style>/* Contact */
+<style>/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #020617;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}/* Contact */
 .contact {
   background: #020617;
 }
@@ -229,7 +262,16 @@ opacity:.8;
 </head>
 
 <body>
+<nav class="navbar">
+  <div class="logo">Abdulloh</div>
 
+  <ul class="nav-links">
+    <li><a href="#home">Bosh sahifa</a></li>
+    <li><a href="#services">Xizmatlar</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Aloqa</a></li>
+  </ul>
+</nav>
 <!-- Header -->
 <header>
 <h1>Salom, men Abdulloh 👋</h1>
