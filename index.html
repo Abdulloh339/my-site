@@ -9,7 +9,22 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-<style>/* Navbar */
+<style>/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section,
+header {
+  animation: fadeUp 1s ease forwards;
+}/* Navbar */
 .navbar {
   position: sticky;
   top: 0;
