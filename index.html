@@ -1,131 +1,262 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abdulloh | Веб-разработчик</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Abdulloh | Web Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+/* Navbar */
+.navbar{
+background:#020617;
+padding:15px 25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+color:#38bdf8;
+font-size:22px;
+font-weight:bold;
+}
+
+.nav-links{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+.nav-links a:hover{
+color:#38bdf8;
+}
+
+/* Header */
+header{
+background:linear-gradient(135deg,#2563eb,#0ea5e9);
+text-align:center;
+padding:90px 20px;
+}
+
+header h1{
+font-size:40px;
+}
+
+header p{
+margin:15px 0;
+font-size:18px;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:14px 32px;
+background:#020617;
+color:#38bdf8;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+}
+
+/* Section */
+section{
+padding:70px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+color:#38bdf8;
+font-size:32px;
+}
+
+/* Cards */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#020617;
+padding:30px;
+border-radius:18px;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(0,0,0,.4);
+}
+
+/* Contact */
+.contact{
+background:#020617;
+border-radius:25px;
+padding:50px 25px;
+text-align:center;
+box-shadow:0 20px 40px rgba(56,189,248,.25);
+}
+
+.contact p{
+color:#cbd5e1;
+margin-bottom:25px;
+}
+
+/* Footer */
+footer{
+background:#020617;
+text-align:center;
+padding:25px;
+opacity:.8;
+margin-top:50px;
+}
+</style>
+
 </head>
 
 <body>
 
-<header>
-  <div class="container">
-    <div class="logo">Abdulloh<span>Dev</span></div>
+<!-- Navbar -->
+<nav class="navbar">
+<div class="logo">Abdulloh</div>
 
-    <nav>
-      <a href="#home">Главная</a>
-      <a href="#services">Услуги</a>
-      <a href="#portfolio">Портфолио</a>
-      <a href="#contact">Контакты</a>
-    </nav>
-  </div>
+<ul class="nav-links">
+<li><a href="#home">Главная</a></li>
+<li><a href="#services">Услуги</a></li>
+<li><a href="#portfolio">Портфолио</a></li>
+<li><a href="#contact">Контакты</a></li>
+</ul>
+</nav>
+
+<!-- Header -->
+<header id="home">
+<h1>Создаю современные сайты</h1>
+<p>Для бизнеса, услуг и личного бренда</p>
+
+<a href="https://t.me/Mamurov1112" class="btn">Заказать сайт</a>
 </header>
 
+<!-- Why Me -->
+<section>
+<h2>Почему выбирают меня</h2>
 
-<!-- HERO -->
-<section id="home" class="hero">
-  <div class="container">
+<div class="grid">
 
-    <h1>Привет, я Абдуллох 👋</h1>
-    <p class="subtitle">
-      Профессиональный веб-разработчик. Создаю современные сайты для бизнеса и личных проектов.
-    </p>
+<div class="card">
+<h3>🚀 Опыт</h3>
+<p>Практика и реальные проекты</p>
+</div>
 
-    <a href="#contact" class="btn">Заказать сайт</a>
+<div class="card">
+<h3>⚡ Скорость</h3>
+<p>Быстрое выполнение заказов</p>
+</div>
 
-  </div>
+<div class="card">
+<h3>💎 Качество</h3>
+<p>Современный дизайн и код</p>
+</div>
+
+</div>
 </section>
 
+<!-- Services -->
+<section id="services">
+<h2>Мои услуги</h2>
 
-<!-- SERVICES -->
-<section id="services" class="services">
-  <div class="container">
+<div class="grid">
 
-    <h2>Мои услуги</h2>
+<div class="card">
+<h3>🌐 Веб-сайты</h3>
+<p>Бизнес, лендинги, портфолио</p>
+</div>
 
-    <div class="services-grid">
+<div class="card">
+<h3>📱 Адаптивность</h3>
+<p>Работа на телефонах и ПК</p>
+</div>
 
-      <div class="service">
-        <h3>🌐 Бизнес-сайт</h3>
-        <p>Корпоративные сайты для компаний и предпринимателей</p>
-      </div>
+<div class="card">
+<h3>🛠 Поддержка</h3>
+<p>Помощь после запуска сайта</p>
+</div>
 
-      <div class="service">
-        <h3>💼 Портфолио</h3>
-        <p>Персональные сайты для специалистов</p>
-      </div>
-
-      <div class="service">
-        <h3>🚀 Лендинг</h3>
-        <p>Одностраничные сайты для рекламы и продаж</p>
-      </div>
-
-      <div class="service">
-        <h3>📱 Адаптивный дизайн</h3>
-        <p>Корректное отображение на всех устройствах</p>
-      </div>
-
-    </div>
-
-  </div>
+</div>
 </section>
 
+<!-- Portfolio -->
+<section id="portfolio">
+<h2>Портфолио</h2>
 
-<!-- PORTFOLIO -->
-<section id="portfolio" class="portfolio">
-  <div class="container">
+<div class="grid">
 
-    <h2>Мои работы</h2>
+<div class="card">
+<h3>Бизнес сайт</h3>
+<p>Корпоративный проект</p>
+</div>
 
-    <div class="projects">
+<div class="card">
+<h3>Лендинг</h3>
+<p>Страница продаж</p>
+</div>
 
-      <div class="project">
-        <h3>Персональный сайт</h3>
-        <p>HTML / CSS / JavaScript</p>
-      </div>
+<div class="card">
+<h3>Портфолио</h3>
+<p>Личный бренд</p>
+</div>
 
-      <div class="project">
-        <h3>Лендинг для бизнеса</h3>
-        <p>Адаптивный дизайн</p>
-      </div>
-
-      <div class="project">
-        <h3>Сайт-визитка</h3>
-        <p>Современный интерфейс</p>
-      </div>
-
-    </div>
-
-  </div>
+</div>
 </section>
 
+<!-- Contact -->
+<section id="contact">
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-  <div class="container">
+<div class="contact">
 
-    <h2>Связаться со мной</h2>
+<h2>Связаться со мной</h2>
 
-    <p>Готов обсудить ваш проект и создать качественный сайт</p>
+<p>Напишите мне в Telegram — отвечу быстро</p>
 
-    <div class="contact-box">
+<a href="https://t.me/Mamurov1112" class="btn">
+Написать в Telegram
+</a>
 
-      <p>📧 Email: abdullohmamurov1114@gmail.com</p>
-      <p>💬 Telegram: @Mamurov1112</p>
-      <p>📱 Телефон: нет</p>
+</div>
 
-    </div>
-
-  </div>
 </section>
 
-
-<!-- FOOTER -->
 <footer>
-  <p>© 2026 Abdulloh Web Developer. Все права защищены.</p>
+© 2026 Abdulloh | Web Developer
 </footer>
 
 </body>
