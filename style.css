@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+
+/* HEADER */
+
+header {
+  background: #020617;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #38bdf8;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+
+/* HERO */
+
+.hero {
+  background: linear-gradient(135deg, #0284c7, #0ea5e9);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: #020617;
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #020617cc;
+}
+
+
+/* SERVICES */
+
+.services {
+  padding: 80px 0;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #38bdf8;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.service {
+  background: #020617;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+
+/* PORTFOLIO */
+
+.portfolio {
+  background: #020617;
+  padding: 80px 0;
+}
+
+.portfolio h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #38bdf8;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.project {
+  background: #0f172a;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+
+/* CONTACT */
+
+.contact {
+  padding: 80px 0;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #38bdf8;
+}
+
+.contact p {
+  text-align: center;
+}
+
+.contact-box {
+  background: #020617;
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+
+/* FOOTER */
+
+footer {
+  background: #020617;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+  nav {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+}
