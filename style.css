@@ -292,3 +292,67 @@ body {
         width: 100%;
     }
 }
+/* ===== MOBIL TUZATISH ===== */
+
+/* Hech narsa tashqariga chiqmasin */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Barcha bloklar ekran ichida bo‘lsin */
+.container,
+section,
+header,
+.hero,
+.main,
+.wrapper {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Rasm yon tomonga chiqmasin */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hero blokni moslash */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+}
+
+/* Faqat bitta forma qolsin */
+@media (max-width: 768px) {
+    form:nth-of-type(2) {
+        display: none !important;
+    }
+}
+
+/* Forma mobilga mos */
+@media (max-width: 768px) {
+    .contact-form {
+        width: 95%;
+        margin: auto;
+    }
+
+    input,
+    textarea,
+    button {
+        width: 100%;
+    }
+}
