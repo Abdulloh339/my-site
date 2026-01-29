@@ -1,4 +1,4 @@
-* {
+ {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -272,4 +272,23 @@ footer {
 
 body {
     overflow-x: hidden;
+}
+/* Mobil uchun faqat bitta forma */
+@media (max-width: 768px) {
+    .contact-form:nth-of-type(2) {
+        display: none;
+    }
+}
+/* Forma mobilga mos bo‘lsin */
+@media (max-width: 768px) {
+    .contact-form {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        width: 100%;
+    }
 }
