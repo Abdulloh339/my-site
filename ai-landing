@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Solutions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+font-family: Arial;
+margin:0;
+background:#0f172a;
+color:white;
+text-align:center;
+}
+.hero{
+padding:80px 20px;
+}
+.btn{
+background:#3b82f6;
+padding:12px 25px;
+border-radius:8px;
+display:inline-block;
+margin-top:20px;
+}
+.section{
+padding:60px 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+<h1>AI Solutions For Business</h1>
+<p>Automate your company with modern AI tools</p>
+<div class="btn">Get Started</div>
+</div>
+
+<div class="section">
+<h2>Our Services</h2>
+<p>AI Automation</p>
+<p>Chatbots</p>
+<p>Data Analysis</p>
+</div>
+
+<div class="section">
+<h2>Why Choose Us</h2>
+<p>Fast integration</p>
+<p>Secure AI systems</p>
+<p>24/7 support</p>
+</div>
+
+<div class="section">
+<h2>Contact</h2>
+<p>Email: contact@aisolutions.com</p>
+</div>
+
+</body>
+</html>
