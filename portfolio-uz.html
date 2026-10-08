@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Abdulloh | Web Dasturchi</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#070b14;
+    color:white;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:25px;
+}
+
+/* NAVBAR */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#00e5ff;
+}
+
+.nav-btn{
+    color:white;
+    text-decoration:none;
+    border:1px solid #00e5ff;
+    padding:11px 20px;
+    border-radius:25px;
+}
+
+/* HERO */
+
+.hero{
+    min-height:78vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.small{
+    color:#00e5ff;
+    font-size:18px;
+    margin-bottom:18px;
+}
+
+h1{
+    font-size:clamp(48px,10vw,90px);
+    line-height:.95;
+    margin-bottom:28px;
+}
+
+h1 span{
+    color:#00e5ff;
+}
+
+.description{
+    color:#aeb7c8;
+    font-size:19px;
+    line-height:1.7;
+    max-width:700px;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+    margin-top:32px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    padding:13px 21px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+    margin-top:18px;
+}
+
+.main-btn{
+    background:#00e5ff;
+    color:#061018;
+}
+
+.telegram{
+    border:1px solid #00e5ff;
+    color:white;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+/* TITLES */
+
+.title{
+    text-align:center;
+    margin:70px 0 30px;
+    font-size:38px;
+}
+
+/* CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:#101725;
+    border:1px solid #1d2b40;
+    padding:28px;
+    border-radius:22px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#00e5ff;
+}
+
+.card h3{
+    font-size:21px;
+    margin-bottom:13px;
+}
+
+.card p{
+    color:#8995a8;
+    line-height:1.6;
+}
+
+/* ABOUT */
+
+.about{
+    text-align:center;
+    margin-top:70px;
+}
+
+.about p{
+    max-width:750px;
+    margin:auto;
+    color:#aeb7c8;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* CONTACT */
+
+.contact{
+    text-align:center;
+    padding:100px 0;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#687386;
+    border-top:1px solid #182233;
+}
+
+/* TELEFON */
+
+@media(max-width:700px){
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    h1{
+        font-size:53px;
+    }
+
+    .description{
+        font-size:17px;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        Abdulloh<span>.</span>
+    </div>
+
+    <a class="nav-btn" href="#aloqa">
+        Bog‘lanish
+    </a>
+
+</nav>
+
+
+<!-- BOSH SAHIFA -->
+
+<section class="hero">
+
+    <div class="small">
+        👋 Salom! Men Abdulloh
+    </div>
+
+    <h1>
+        Professional<br>
+        <span>Web Dasturchi</span>
+    </h1>
+
+    <p class="description">
+        Zamonaviy, chiroyli va moslashuvchan
+        web-saytlar yarataman. Web-dasturlash
+        sohasida 2 yillik tajribaga egaman.
+    </p>
+
+    <div class="buttons">
+
+        <a class="btn main-btn" href="#loyihalar">
+            🚀 Loyihalarim
+        </a>
+
+        <a class="btn telegram"
+           href="https://t.me/real_abdulloh"
+           target="_blank">
+            ✈️ Telegram
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- TAJRIBA -->
+
+<h2 class="title">
+    Tajribam
+</h2>
+
+<div class="cards">
+
+    <div class="card">
+        <h3>💻 2+ yil tajriba</h3>
+
+        <p>
+            Web-dasturlash sohasida 2 yildan
+            ortiq amaliy tajribaga egaman.
+        </p>
+    </div>
+
+
+    <div class="card">
+        <h3>🌐 Frontend</h3>
+
+        <p>
+            HTML, CSS va JavaScript yordamida
+            zamonaviy interfeyslar yarataman.
+        </p>
+    </div>
+
+
+    <div class="card">
+        <h3>📱 Responsive</h3>
+
+        <p>
+            Saytlarni telefon, planshet va
+            kompyuter ekranlariga moslayman.
+        </p>
+    </div>
+
+</div>
+
+
+<!-- KO‘NIKMALAR -->
+
+<h2 class="title">
+    Mening ko‘nikmalarim
+</h2>
+
+<div class="cards">
+
+    <div class="card">
+        <h3>🌐 HTML</h3>
+
+        <p>
+            Professional web-saytlarning
+            tuzilmasini yaratish.
+        </p>
+    </div>
+
+
+    <div class="card">
+        <h3>🎨 CSS</h3>
+
+        <p>
+            Zamonaviy dizayn, animatsiyalar
+            va chiroyli interfeyslar.
+        </p>
+    </div>
+
+
+    <div class="card">
+        <h3>⚡ JavaScript</h3>
+
+        <p>
+            Saytlarga interaktivlik va
+            turli funksiyalar qo‘shish.
+        </p>
+    </div>
+
+</div>
+
+
+<!-- LOYIHALAR -->
+
+<section id="loyihalar">
+
+<h2 class="title">
+    Mening loyihalarim
+</h2>
+
+<div class="cards">
+
+
+    <!-- 1-LOYIHA -->
+
+    <div class="card">
+
+        <h3>🌐 Birinchi saytim</h3>
+
+        <p>
+            Men yaratgan birinchi shaxsiy
+            web-saytim.
+        </p>
+
+        <a class="btn main-btn"
+           href="https://abdulloh339.github.io/my-site/index.html"
+           target="_blank">
+
+            Saytni ko‘rish →
+
+        </a>
+
+    </div>
+
+
+    <!-- 2-LOYIHA -->
+
+    <div class="card">
+
+        <h3>🤖 AI loyiha</h3>
+
+        <p>
+            Sun’iy intellekt bilan ishlash
+            uchun yaratgan web-loyiham.
+        </p>
+
+        <a class="btn main-btn"
+           href="https://abdulloh339.github.io/my-site/abdulloh.html"
+           target="_blank">
+
+            Loyihani ko‘rish →
+
+        </a>
+
+    </div>
+
+
+    <!-- 3-LOYIHA -->
+
+    <div class="card">
+
+        <h3>💼 Portfolio</h3>
+
+        <p>
+            Web-dasturchi sifatidagi tajribam,
+            ko‘nikmalarim va ishlarim.
+        </p>
+
+        <a class="btn main-btn"
+           href="https://abdulloh339.github.io/my-site/portfolio-ru.html"
+           target="_blank">
+
+            Portfolio ko‘rish →
+
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- MEN HAQIMDA -->
+
+<section class="about">
+
+    <h2 class="title">
+        Men haqimda
+    </h2>
+
+    <p>
+        Men web-dasturlash bilan shug‘ullanuvchi
+        dasturchiman. Zamonaviy texnologiyalar
+        yordamida sifatli, tezkor va qulay
+        web-saytlar yaratishga e’tibor beraman.
+        Har bir loyihada chiroyli dizayn va
+        foydalanuvchi uchun qulaylikni
+        birinchi o‘ringa qo‘yaman.
+    </p>
+
+</section>
+
+
+<!-- ALOQA -->
+
+<section class="contact" id="aloqa">
+
+    <h2 class="title">
+        Loyihaingiz bormi?
+    </h2>
+
+    <p class="description" style="margin:auto;">
+
+        Loyihangiz haqida Telegram orqali
+        bog‘lanishingiz mumkin.
+
+    </p>
+
+    <div class="buttons"
+         style="justify-content:center;">
+
+        <a class="btn main-btn"
+           href="https://t.me/real_abdulloh"
+           target="_blank">
+
+            ✈️ Telegram orqali bog‘lanish
+
+        </a>
+
+    </div>
+
+</section>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    © 2026 Abdulloh — Web Dasturchi
+
+</footer>
+
+</body>
+</html>
